@@ -14,7 +14,6 @@ if os.getenv("Cofact_db_password") != None:
 else:
     print("password haven't set in env")
 
-password = '_P5e8a2s5on58'
 driver = '{ODBC Driver 18 for SQL Server}'
 params = urllib.parse.quote_plus(
     'Driver=%s;' % driver +
