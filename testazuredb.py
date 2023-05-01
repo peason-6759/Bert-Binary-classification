@@ -1,3 +1,4 @@
+import os 
 import sqlalchemy
 import urllib
 import pyodbc
@@ -5,7 +6,7 @@ from CofactsDataTest.importData import Articles
 server = "peason-project.database.windows.net"
 database = "Cofacts"
 username = "peason6759"
-password = '_P5e8a2s5on58'
+password =  os.getenv("Cofact_db_password")
 driver = '{ODBC Driver 18 for SQL Server}'
 params = urllib.parse.quote_plus(
     'Driver=%s;' % driver +
